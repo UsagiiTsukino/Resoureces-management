@@ -1,0 +1,35 @@
+{
+  "name": "nodedm",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "resources/app.js",
+  "scripts": {
+    "start": "nodemon --inspect resources/app.js",
+    "watch": "node-sass -w resources/src/scss -o resources/public/css",
+    "beautiful": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "express"
+  ],
+  "author": "Nguyen Trung Hieu",
+  "license": "ISC",
+  "lint-staged": {
+    "resources/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "mongoose": "^6.2.8",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.1"
+  }
+}
