@@ -7,6 +7,8 @@ const path = require('path');
 const route = require('./routes');
 const mongoose = require('mongoose');
 const db = require ('./config/db')
+const methodOverride = require('method-override')
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Connect DB
@@ -19,12 +21,15 @@ app.use(
     }),
 );
 app.use(express.json());
-
+app.use(methodOverride('_method'))
 // Template engine
 app.engine(
     'hbs',
     handlebars.engine({
         extname: '.hbs',
+        helpers : {
+            sum: (a,b) => a + b
+        }
     }),
 );
 app.set('view engine', 'hbs');

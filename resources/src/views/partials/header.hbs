@@ -1,33 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Home</a>
+  <div class="container">
+    <div class="home-btn">
+       <a class="navbar-brand" href="/">Home</a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/181415923_2833785176834033_5553031235311940064_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=ethxj6q5NLQAX9ORnF_&_nc_ht=scontent.fdad1-3.fna&oh=00_AT_HqR8uWdyRx6MqwsgW4zkp81MoR9AYNA1kn3zONnPLrA&oe=6272E3EE" alt="" class="user-avatar">
+            Nguyễn Trung Hiếu
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/courses/create">Đăng khóa học</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a>
+            <a class="dropdown-item" href="/me/stored/news">Bài viết của tôi</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Đăng xuất</a>
+          </div>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
