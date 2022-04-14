@@ -20,3 +20,13 @@
         
     </div>
 </div>
+<script>
+    const cardList = document.querySelectorAll('.card-body');
+    const heightMax = 0;
+/*    cardList.forEach(card => {
+       heightMax = heightMax < card.style.height ? card.style.height : heightMax;
+    }); */
+    cardList.forEach(card => {
+       card.style.height = 300 +  'px';
+    });
+</script>
